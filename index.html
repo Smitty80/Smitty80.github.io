@@ -195,15 +195,22 @@
         }
 
         /* Styling for Call-to-Action (CTA) buttons */
-        .cta-button {
-            background-color: #f69f8b;  /* Orange background */
-            color: white;  /* White text */
-            padding: 12px 20px;  /* Padding inside the button */
-            border-radius: 5px;  /* Rounded corners */
-            text-decoration: none;  /* No underline for links */
-            font-weight: bold;  /* Bold text */
-            transition: background-color 0.3s ease;  /* Smooth transition on hover */
-        }
+      .cta-button {
+  font-size: 18px;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #007BFF; /* Example background color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Smaller font size for screens 600px or less */
+@media (max-width: 600px) {
+  .cta-button {
+    font-size: 14px; /* Smaller text size for smaller screens */
+    padding: 8px 16px; /* Optional: adjust padding for smaller screens */
+  }
+}
 
         .cta-button:hover {
             background-color: #ee7d5b;  /* Darker orange on hover */
