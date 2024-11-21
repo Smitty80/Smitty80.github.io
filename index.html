@@ -304,10 +304,13 @@
             ~~~~~~~~
         </div>
         <h3>Family:</h3>
-           <picture>
-                <!-- There is no option provided for small media -->
-                <img src="images/family2.jpg" alt="The Lawson family" name="Image1" />
-            </picture>
+<picture>
+  <!-- For screens 600px or smaller, use family3.jpg -->
+  <source media="(max-width: 600px)" srcset="images/family3.jpg">
+  
+  <!-- For larger screens, use family2.jpg -->
+  <img src="images/family2.jpg" alt="The Lawson family" name="Image1">
+</picture>
             <div class="center-text">
                 ~~~~~~~~
             </div>
