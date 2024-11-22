@@ -388,7 +388,7 @@
                 <p>The place to go for excavation services.</p>
             </div>
             <h2>Contact Us</h2>
-            <form action="process-form.php" method="POST">
+            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <input type="text" name="phone" placeholder="Your Phone Number" required>
