@@ -330,10 +330,12 @@
             ~~~~~~~~~~~~~~~~~~~~~
         </div>
         <h3>Family:</h3>
-           <picture>
-                <!-- There is no option provided for small media -->
-                <img src="images/family2.jpg" alt="The Lawson family" name="Image1" />
-            </picture>
+<picture>
+    <!-- Image for smaller screens (below 768px) -->
+    <source srcset="images/family3.jpg" media="(max-width: 767px)">
+    <!-- Image for larger screens (768px and above) -->
+    <img src="images/family2.jpg" alt="The Lawson family" name="Image1">
+</picture>
             <div class="center-text">
                 ~~~~~~~~~~~~~~~~~~~~~
             </div>
