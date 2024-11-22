@@ -396,7 +396,33 @@
                 <button type="submit">Send Message</button>
             </form>
         </section>
+<?php
+// Process the form when submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = sanitize_input($_POST["name"]);
+    $email = sanitize_input($_POST["email"]);
+    $phone = sanitize_input($_POST["phone"]);
+    $message = sanitize_input($_POST["message"]);
 
+    // Simple validation
+    if (empty($name) || empty($email) || empty($phone) || empty($message)) {
+        echo "All fields are required.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+    } else {
+        // Send the email or process the data here
+        echo "Thank you for your message!";
+    }
+}
+
+// Function to sanitize user input
+function sanitize_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+?>
         <!-- Footer section -->
         <footer>
             <p>&copy; 2024 TLR Excavation. All Rights Reserved.</p>
