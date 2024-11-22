@@ -188,6 +188,32 @@
             border-radius: 4px;  /* Rounded corners */
             cursor: pointer;  /* Pointer cursor on hover */
         }
+/* Default styles for the button */
+.cta-button {
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .cta-button {
+    font-size: 14px;    /* Decrease font size */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+/* Media query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .cta-button {
+    font-size: 12px;   /* Further decrease font size */
+    padding: 8px 16px; /* Further adjust padding */
+  }
+}
 
         /* Hover effect for buttons */
         button:hover {
