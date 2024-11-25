@@ -398,13 +398,26 @@
     </section>
         <!-- Contact section with background picture -->
         <section id="contact" class="contact">
-        <h2></h2>
-		<picture>
-                    <source media="(max-width: 600px)" srcset="images/bucket-big.png">
-                    <img src="images/bucket-big.png" alt="TLR excavation pro" />
-                </picture>
+    <section id="contact" class="contact">
 
-            <div class="contact-container">
+        <div class="contact-container">
+            <picture>
+                <!-- For small screens, show the smaller image -->
+                <source media="(max-width: 600px)" srcset="file:///D:/Web-Deveopment/Excavate7/images/bucket-big.png">
+    
+                <!-- For larger screens, show the bigger image -->
+                <source media="(min-width: 601px)" srcset="file:///D:/Web-Deveopment/Excavate7/images/bucket-big.png">
+    
+                <!-- Fallback image if picture or source is not supported -->
+                <img src="file:///D:/Web-Deveopment/Excavate7/images/bucket-big.png" alt="TLR excavation pro" name="Image1" />
+            </picture>
+            <p>The place to go for excavation services.</p>
+        </div>
+    </section>
+    
+        <h2>Contact Us       
+            
+        </h2>
                 	<form action="https://formspree.io/f/xkgnvpnj" method="POST">			
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name" required>
@@ -419,7 +432,6 @@
     
 			<button type="submit">Send</button>
 		</form>
-
             </div> 
         </section>
         <!-- Footer section -->
