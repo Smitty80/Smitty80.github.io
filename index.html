@@ -54,13 +54,7 @@
             font-size: 1.5rem;  /* Sets font size for better readability */
             line-height: 1.6;   /* Line height to improve readability */
         }
- 	/* Styling for reload message */
-	@media (max-width: 600px) {
-        .reload-message p {
-             font-size: 1.2rem !important; 
-	 /* Slightly smaller text for mobile screens */
-        }
-	}
+
         /* Smaller text for smaller screen sizes */
         @media (max-width: 600px) {
             .contact-container p {
@@ -80,7 +74,13 @@
                 max-width: 100%;  /* Makes image and text take full width */
             }
         }
-
+ 	/* Styling for reload message */
+	@media (max-width: 600px) {
+        .reload-message p {
+             font-size: 1.2rem ; 
+	 /* Slightly smaller text for mobile screens */
+        }
+	}
         /* Header section styling */
         header {
             background-color: rgba(0, 123, 255, 0.8);  /* Semi-transparent blue background */
