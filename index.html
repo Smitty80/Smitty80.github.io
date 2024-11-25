@@ -54,7 +54,12 @@
             font-size: 1.5rem;  /* Sets font size for better readability */
             line-height: 1.6;   /* Line height to improve readability */
         }
-
+ 	/* Styling for reload message */
+	    @media (max-width: 600px) {
+        .reload-message p {
+            font-size: 1.2rem;  /* Slightly smaller text for mobile screens */
+        }
+    }
         /* Smaller text for smaller screen sizes */
         @media (max-width: 600px) {
             .contact-container p {
@@ -164,12 +169,7 @@
             border-radius: 8px;  /* Rounded corners */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Adds shadow for visual appeal */
         }
- 	/* Styling for reload message */
-	    @media (max-width: 600px) {
-        .reload-message p {
-            font-size: 1.2rem;  /* Slightly smaller text for mobile screens */
-        }
-    }
+
         /* Styling for forms */
         form {
             display: flex;  /* Flexbox layout */
